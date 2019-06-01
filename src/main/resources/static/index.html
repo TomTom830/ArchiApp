@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="index_app">
+<head>
+    <meta charset="UTF-8">
+    <title>Page accueil</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "/css/style_co.css" />
+
+</head>
+<body ng-controller="mainController">
+
+    <div class="haut">
+        <form action="/html/registration.html">
+            <input type="submit" class="button button_register" value="Register" />
+        </form>
+    </div>
+
+    <div class="centre">
+        <form action="/authenticated/feed.html">
+            <input type="submit" class="button button_go" value="Get Started" />
+        </form>
+    </div>
+
+</body>
+</html>

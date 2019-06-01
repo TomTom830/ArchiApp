@@ -1,0 +1,98 @@
+h5.nom_deja_pris {
+    visibility: hidden;
+}
+
+.button {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button_go{
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    width:95%;
+    height: 100px;
+    border-radius: 25px;
+    margin-left:2.5%;
+}
+
+.button_go:hover{
+    background-color: white;
+    color: black;
+}
+
+.button_register{
+    background-color: #279729;
+    color: white;
+    border: 2px solid #279729;
+    width:95%;
+    height: 100px;
+    border-radius: 25px;
+    margin-left:2.5%;
+}
+
+.button_register:hover{
+    background-color: white;
+    color: black;
+}
+
+.centre{
+    margin-top: 200px;
+}
+
+
+input.register[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.register[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input.register[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input.register[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.register {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

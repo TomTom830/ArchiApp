@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoList">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Page Description">
+    <meta name="author" content="fred">
+    <title>Page Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="feed.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+
+<form action="/appLogout">
+    <input type="submit" value="Deconnexion" />
+</form>
+
+
+<h1>TodoList</h1>
+
+
+<form ng-submit="addTask()">
+    <input type="text" placeholder="Task..." ng-model="Task.content">
+    <button type="submit" >Ajouter tache</button>
+</form>
+
+
+
+<ul ng-repeat="x in Laliste">
+    <form>
+        <button type="button" ng-click="delTask(x.id)">X</button>
+        {{x.content}}
+        <input type="text" placeholder="Modifier" ng-model="modify[x.id]">
+        <button type="submit" ng-click="modifyList(x.id)">Modifier</button>
+    </form>
+</ul>
+
+</body>
+</html>
