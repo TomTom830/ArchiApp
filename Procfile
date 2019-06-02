@@ -1,1 +1,1 @@
-web: java -jar target/todoList-1.0-SNAPSHOT.jar --spring.profiles.active=prod --server.port=$PORT
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/todoList-1.0-SNAPSHOT.jar
